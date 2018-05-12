@@ -1,5 +1,5 @@
 --[[
-    bindings.lua (rev. 2018/04/12)
+    bindings.lua (rev. 2018/05/11)
     otouto's bindings for the Telegram bot API.
     https://core.telegram.org/bots/api
 
@@ -33,6 +33,7 @@ local mp = require('multipart-post')
 
 function bindings.set_token(token)
     bindings.BASE_URL = 'https://api.telegram.org/bot' .. token .. '/'
+    bindings.FILE_URL = 'https://api.telegram.org/file/bot' .. token .. '/'
     return bindings
 end
 
